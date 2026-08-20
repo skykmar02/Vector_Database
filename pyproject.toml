@@ -1,0 +1,26 @@
+[project]
+name = "vector-database"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shaurav", email = "skykumar02@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "minsearch>=0.2.0",
+    "openai>=3.0.0",
+    "psycopg[binary]>=3.3.4",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "sentence-transformers>=5.7.0",
+    "sqlitesearch>=0.3.0",
+]
+
+[project.scripts]
+vector-database = "vector_database:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
